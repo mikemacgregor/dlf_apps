@@ -1,0 +1,175 @@
+.appBody {
+  background-color: #f2f4f8;
+}
+
+.playerProfile-body-statCard {
+  clear: both;
+  margin-bottom: 25px;
+  margin-top: 0;
+  padding: 0;
+}
+
+.float-right {
+    float: right;
+}
+
+.playerProfile-body-statCard-title {
+  background-color: #ffffff;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 2px 0 0;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 15px 15px 7px;
+  min-height: 48px;
+}
+
+.playerProfile-body-statCard-title h5 {
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 0 7px;
+  padding: 0;
+  text-overflow: ellipsis;
+  float: left;
+}
+
+.playerProfile-body-statCard-content {
+  background-color: #ffffff;
+  color: inherit;
+  padding: 15px 20px 20px 20px;
+  border-color: #e7eaec;
+  border-image: none;
+  border-style: solid solid none;
+  border-width: 1px 0;
+  position: relative;
+}
+
+.playerProfile-body-statCard-content-trend {
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+}
+
+.playerProfile-card {
+  margin-top: 90px;
+  background: #16222a; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #222222, #004cb0); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #222222, #004cb0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: white;
+  border-radius: 5px;
+  position: relative;
+}
+
+.rankCards {
+  padding-top: 50px;
+  color: #222222;
+  text-align: center;
+}
+
+.playerProfile-card-extraRow {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.playerProfile-mainData-point {
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: url(http://fonline-reloaded.net/img/overlay.png);
+  background-color: rgba(0, 0, 0, .8);
+  opacity: 0.9;
+}
+
+.playerProfile-valueChart {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #e7eaec;
+}
+
+.playerProfile-mainData-point.mid {
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+.container-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('http://fonline-reloaded.net/img/overlay.png');
+}
+
+.playerProfile-card-dataRow {
+  margin-bottom: 10px;
+}
+
+.playerProfile-card-playerInfo {
+  position: relative;
+  min-height: 400px;
+}
+
+.playerProfile-card-nameRow {
+  margin-bottom: 30px;
+}
+
+.playerProfile-card-playerImg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 350px;
+}
+
+.playerProfile-body {
+  margin-top: 10px;
+}
+
+.playerProfile-body-content {
+    display: none;
+}
+
+.playerProfile-body-contentSelector {
+  margin-bottom: 20px;
+}
+
+.playerProfile-button {
+  font-weight: bold;
+}
+
+.playerProfile-button.active {
+  background-color: #004cb0;
+  color: white;
+}
+
+.divider {
+  background-color: white;
+}
+
+.playerProfile-body-content-dataBody {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  .playerProfile-card {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .playerProfile-card {
+    margin-top: 54px;
+  }
+
+  .playerProfile-valueChart {
+    padding: 3px;
+  }
+}
+
+.show {
+    display: block;
+}

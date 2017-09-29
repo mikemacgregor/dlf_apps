@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="player.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+  </head>
+  <body class="appBody">
+      <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">Dynasty League Football</a>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Test 1</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+    <div class="container playerProfile-card">
+      <div class="container-overlay"></div>
+      <div class="row">
+        <div class="col-lg-7 col-12 playerProfile-card-playerInfo">
+          <img class="playerProfile-card-playerImg" src="http://a.espncdn.com/combiner/i?img=/i/headshots/nfl/players/full/16733.png" />
+          <div class="row playerProfile-card-nameRow">
+            <div class="col-12">
+              <h1>Odell Beckham</h1>
+              <div class="playerProfile-card-extraRow">
+                <div>
+                  <h3>WR | NYG</h3>
+                </div>
+                <div>
+                  <!-- <h4>Status: Active <i class="fa fa-check-circle text-success"></i></h4> -->
+                  <h4>Status: Questionable <i class="fa fa-exclamation-triangle text-warning"></i></h4>
+                  <!-- <h4>Status: Out <i class="fa fa-exclamation-circle text-danger"></i></h4> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row playerProfile-card-dataRow">
+            <div class="col-6 text-left">
+              <h5>Height</h5>
+              <h6>5'11</h6>
+            </div>
+            <div class="col-6 text-right">
+              <h5>Weight</h5>
+              <h6>198lbs</h6>
+            </div>
+          </div>
+          <div class="row playerProfile-card-dataRow">
+            <div class="col-6 text-left">
+              <h5>Age</h5>
+              <h6>24</h6>
+            </div>
+            <div class="col-6 text-right">
+              <h5>Experience</h5>
+              <h6>4 years</h6>
+            </div>
+          </div>
+          <div class="row playerProfile-card-dataRow">
+            <div class="col-6 text-left">
+              <h5>College</h5>
+              <h6>LSU</h6>
+            </div>
+            <div class="col-6 text-right">
+              <h5>Drafted</h5>
+              <h6>12th</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5 col-12 rankCards hidden-md-down">
+          <div class="row">
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <strong>Rank</strong>
+                </div>
+                <div class="card-block">
+                  1st
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <strong>ADP</strong>
+                </div>
+                <div class="card-block">
+                  1st
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <strong>MFL</strong>
+                </div>
+                <div class="card-block">
+                  1st
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container hidden-lg-up">
+      <div class="row text-center">
+        <div class="col-4 playerProfile-mainData-point">
+          <h4>Rank</h4>
+          <h5>1st</h5>
+        </div>
+        <div class="col-4 playerProfile-mainData-point mid">
+          <h4>ADP</h4>
+          <h5>1st</h5>
+        </div>
+        <div class="col-4 playerProfile-mainData-point">
+          <h4>MFL</h4>
+          <h5>1st</h5>
+        </div>
+      </div>
+    </div>
+    <div class="container playerProfile-body">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="btn-group playerProfile-body-contentSelector" role="group" aria-label="Content Selection">
+            <button type="button" class="btn btn-secondary playerProfile-button active" id="value">Value</button>
+            <button type="button" class="btn btn-secondary playerProfile-button" id="news">News</button>
+            <button type="button" class="btn btn-secondary playerProfile-button" id="stats">Stats</button>
+          </div>
+        </div>
+      </div>
+      <div class="playerProfile-body-content stats">Stats</div>
+      <div class="playerProfile-body-content news">
+          <div class="text-center">
+            <h1>News</h1>
+            <span class="text-muted">News and articles from DLF and around the fantasy football community.</span>
+          </div>
+          <div class="container playerProfile-body-content-dataBody">
+            <div class="row">
+                <div class="col-12">
+                    <div class="playerProfile-body-statCard">
+                        <div class="playerProfile-body-statCard-title">
+                          <h5>DLF Newswire</h5>
+                        </div>
+                        <div class="playerProfile-body-statCard-content">
+                          <div>
+                            <h1>1.4</h1>
+                            <div class="playerProfile-body-statCard-content-trend text-success">4 <i class="fa fa-level-up"></i></div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="playerProfile-body-content value show">
+        <div class="text-center">
+          <h1>Value</h1>
+          <span class="text-muted">ADP, Staff Rankings, and other data to help you determine player value.</span>
+          <!-- <canvas id="myChart" width="400" height="400"></canvas> -->
+        </div>
+        <div class="container playerProfile-body-content-dataBody">
+          <div class="row">
+            <div class="col-12 text-center">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="playerProfile-body-statCard">
+                      <div class="playerProfile-body-statCard-title">
+                        <h5>DLF ADP</h5>
+                      </div>
+                      <div class="playerProfile-body-statCard-content">
+                        <div>
+                          <h1>1.4</h1>
+                          <div class="playerProfile-body-statCard-content-trend text-success">4 <i class="fa fa-level-up"></i></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="playerProfile-body-statCard">
+                      <div class="playerProfile-body-statCard-title">
+                        <h5>DLF Rank</h5>
+                      </div>
+                      <div class="playerProfile-body-statCard-content">
+                        <div>
+                          <h1>3.6</h1>
+                          <div class="playerProfile-body-statCard-content-trend text-danger">4 <i class="fa fa-level-down"></i></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="playerProfile-body-statCard">
+                      <div class="playerProfile-body-statCard-title">
+                        <h5>MFL ADP</h5>
+                      </div>
+                      <div class="playerProfile-body-statCard-content">
+                        <div>
+                          <h1>2.4</h1>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="playerProfile-body-statCard">
+                      <div class="playerProfile-body-statCard-title">
+                        <h5>Redraft ADP</h5>
+                      </div>
+                      <div class="playerProfile-body-statCard-content">
+                        <div>
+                          <h1>7</h1>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <div class="playerProfile-body-statCard">
+                          <div class="playerProfile-body-statCard-title">
+                            <h5>Value Graph</h5>
+                          </div>
+                          <div class="playerProfile-body-statCard-content">
+                            <canvas id="myChart" class="chartjs" width="1850" height="925" style="display: block; height: 370px; width: 740px;"></canvas>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                      <div class="playerProfile-body-statCard">
+                          <div class="playerProfile-body-statCard-title">
+                            <h5>Latest ADP</h5>
+                            <span class="float-right"><a href="#"><small>SEE ALL</small></a></span>
+                          </div>
+                          <div class="playerProfile-body-statCard-content text-center">
+                              <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>ADP</th>
+                                      <th>Name</th>
+                                      <th>Position</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr class="table-active">
+                                      <td>1.4</td>
+                                      <td>Odell Beckham</td>
+                                      <td>WR</td>
+                                    </tr>
+                                    <tr>
+                                      <td>2.3</td>
+                                      <td><a href="#">Mike Evans</a></td>
+                                      <td>WR</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3.5</td>
+                                      <td><a href="#">David Johnson</a></td>
+                                      <td>RB</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5.1</td>
+                                      <td><a href="#">Julio Jones</a></td>
+                                      <td>WR</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5.8</td>
+                                      <td><a href="#">Antonio Brown</a></td>
+                                      <td>WR</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <div class="playerProfile-body-statCard">
+                          <div class="playerProfile-body-statCard-title">
+                            <h5>DLF Rankings</h5>
+                            <span class="float-right"><a href="#"><small>SEE ALL</small></a></span>
+                          </div>
+                          <div class="playerProfile-body-statCard-content text-center">
+                              <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>Rank</th>
+                                      <th>Name</th>
+                                      <th>Position</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1.7</td>
+                                      <td><a href="#">Mike Evans</a></td>
+                                      <td>WR</td>
+                                    </tr>
+                                    <tr class="table-active">
+                                      <td>2.6</td>
+                                      <td>Odell Beckham</td>
+                                      <td>WR</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3.5</td>
+                                      <td><a href="#">David Johnson</a></td>
+                                      <td>RB</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5.1</td>
+                                      <td><a href="#">Julio Jones</a></td>
+                                      <td>WR</td>
+                                    </tr>
+                                    <tr>
+                                      <td>5.8</td>
+                                      <td><a href="#">Antonio Brown</a></td>
+                                      <td>WR</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                      <div class="playerProfile-body-statCard">
+                          <div class="playerProfile-body-statCard-title">
+                            <h5>Latest Ranks</h5>
+                          </div>
+                          <div class="playerProfile-body-statCard-content">
+                              <table class="table table-hover">
+                                  <thead>
+                                    <tr>
+                                      <th>Rank</th>
+                                      <th>Ranker</th>
+                                      <th>
+                                          Date
+                                      </th>
+                                      <th>Comment</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1 <i class="fa fa-sort-asc rankIcon text-success"></i></td>
+                                      <td><a href="#">Joseph N</a></td>
+                                      <td>
+                                          9/29/17
+                                      </td>
+                                      <td>Top 3 WR in game, but four years younger than other two. Transcends bad quarterback play</td>
+                                    </tr>
+                                    <tr>
+                                      <td>1 <i class="fa fa-sort-asc rankIcon text-success"></i></td>
+                                      <td><a href="#">Mike V</a></td>
+                                      <td>
+                                          9/14/17
+                                      </td>
+                                      <td>Complete dominance at his position and best dynasty asset by far</td>
+                                    </tr>
+                                    <tr>
+                                      <td>3 <i class="fa fa-sort-desc rankIcon text-danger"></i></td>
+                                      <td><a href="#">Rob W</a></td>
+                                      <td>
+                                          9/12/17
+                                      </td>
+                                      <td>Best Confluence of talent and production in this group.</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-sparklines/2.1.2/jquery.sparkline.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/jquery.sparkline.min.js"></script> -->
+    <!-- <script type="text/javascript">
+    $(function() {
+        /** This code runs when everything has been loaded on the page */
+        /* Inline sparklines take their values from the contents of the tag */
+        var myvalues = [10,8,5,7,4,4,1];
+        $('.inlinesparkline').sparkline(myvalues, { width: '100px', height: '100px' });
+    });
+    </script> -->
+    <script>
+      var ctx = document.getElementById("myChart");
+      var data = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [
+          {
+            label: "ADP",
+            data: [7, 12, 14, 6, 8, 20, 8, 10, 2, 3, 6, 1],
+            fill: false,
+            borderColor: '#004cb0'
+          },
+          {
+            label: "Rank",
+            data: [3, 11, 14, 9, 2, 24, 3, 13, 1, 1, 2, 4],
+            fill: false,
+            borderColor: '#406934'
+          }
+        ]
+      }
+
+      var rankData = {
+        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [
+          {
+            label: "ADP",
+            data: [7, 12, 14, 6, 8, 20, 8, 10, 2, 3, 6, 1],
+            fill: false,
+            borderColor: '#004cb0'
+          },
+          {
+            label: "Rank",
+            data: [3, 11, 14, 9, 2, 24, 3, 13, 1, 1, 2, 4],
+            fill: false,
+            borderColor: '#004cb0'
+          }
+        ]
+      }
+
+      var myLineChart = new Chart(ctx, {
+        type: 'line',
+        data: data,
+        options: {
+          responsive: true,
+          scales: {
+            yAxes: [
+              {
+                ticks: {
+                  reverse: true
+                }
+              }
+            ]
+          }
+        },
+      });
+      </script>
+      <script>
+        (function() {
+            $('#value').click(function (e) {
+              e.preventDefault()
+              $('.playerProfile-button.active').removeClass('active');
+              $('#value').addClass('active');
+              $('.playerProfile-body-content.show').removeClass('show');
+              $('.playerProfile-body-content.value').addClass('show');
+            })
+
+            $('#news').click(function (e) {
+              e.preventDefault()
+              $('.playerProfile-button.active').removeClass('active');
+              $('#news').addClass('active');
+              $('.playerProfile-body-content.show').removeClass('show');
+              $('.playerProfile-body-content.news').addClass('show');
+            })
+
+            $('#stats').click(function (e) {
+              e.preventDefault()
+              $('.playerProfile-button.active').removeClass('active');
+              $('#stats').addClass('active');
+              $('.playerProfile-body-content.show').removeClass('show');
+              $('.playerProfile-body-content.stats').addClass('show');
+            })
+
+        })();
+      </script>
+  </body>
+</html>
